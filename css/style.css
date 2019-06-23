@@ -547,34 +547,34 @@ main {
 
 .fourth-section__span__item1 {
   left: 5%;
-  bottom: -156vh;
+  bottom: calc(100vh - 150rem);
   font-size: 48px;
   transform: rotate(30deg);
 }
 
 .fourth-section__span__item2 {
-  bottom: -186vh;
+  bottom: calc(100vh - 167rem);
   left: 13%;
   font-size: 57px;
   transform: rotate(15deg);
 }
 
 .fourth-section__span__item3 {
-  bottom: -157vh;
+  bottom: calc(100vh - 151rem);
   left: 83%;
   font-size: 40px;
   transform: rotate(-15deg);
 }
 
 .fourth-section__span__item4 {
-  bottom: -182vh;
+  bottom: calc(100vh - 165rem);
   left: 65%;
   font-size: 37px;
   transform: rotate(30deg);
 }
 
 .fourth-section__span__item5 {
-  bottom: -176vh;
+  bottom: calc(100vh - 161rem);
   left: 90%;
   font-size: 48px;
   transform: rotate(-15deg);
@@ -730,45 +730,46 @@ footer .fixed-container > * {
   }
 
   .fourth-section__span__item1 {
-    bottom: -161vh;
+    bottom: calc(100vh - 152rem);
   }
 
   .fourth-section__span__item2 {
-    bottom: -190vh;
+    bottom: calc(100vh - 170rem);
   }
 
   .fourth-section__span__item3 {
-    bottom: -159vh;
+    bottom: calc(100vh - 151rem);
   }
 
   .fourth-section__span__item4 {
-    bottom: -187vh;
+    bottom: calc(100vh - 168rem);
   }
 
   .fourth-section__span__item5 {
-    bottom: -181vh;
+    bottom: calc(100vh - 165rem);
   }
 }
 
 @media screen and (max-width: 1106px) {
   .fourth-section__span__item1 {
-    bottom: -162vh;
+    bottom: calc(100vh - 154rem);
+    left: 2%;
   }
 
   .fourth-section__span__item2 {
-    bottom: -192vh;
+    bottom: calc(100vh - 172rem);
   }
 
   .fourth-section__span__item3 {
-    bottom: -162vh;
+    bottom: calc(100vh - 153rem);
   }
 
   .fourth-section__span__item4 {
-    bottom: -189vh;
+    bottom: calc(100vh - 170rem);
   }
 
   .fourth-section__span__item5 {
-    bottom: -183vh;
+    bottom: calc(100vh - 166rem);
   }
 }
 
@@ -780,7 +781,7 @@ footer .fixed-container > * {
   }
 
   .first-section svg {
-    transform: translate(-60vh, -33.3vh);
+    transform: translate(-35rem, -19.5rem);
   }
 
   .first-section__content {
@@ -899,11 +900,5 @@ footer .fixed-container > * {
     margin-left: 8vh;
     height: 480px;
     margin-right: 50px;
-  }
-
-  .first-section__img svg {
-    right: -200px;
-    bottom: 140px;
-    height: 500px;
   }
 }
