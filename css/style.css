@@ -9,10 +9,11 @@ html, body {
   font-family: Roboto;
   font-size: 16px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
+  position: relative;
 }
 
 /*=============MODEL WINDOWS=============*/
@@ -773,7 +774,7 @@ footer .fixed-container > * {
   }
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1070px) {
   .first-section .fixed-container {
     flex-direction: column-reverse;
     margin-top: 90px;
@@ -874,7 +875,7 @@ footer .fixed-container > * {
   }
 }
 
-@media screen and (max-width: 502px) {
+@media screen and (max-width: 516px) {
   .first-section svg {
     transform: translate(-35rem, -18.78rem);
   }
@@ -938,7 +939,7 @@ footer .fixed-container > * {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .menu__phone-number {
     font-size: 19px;
   }
@@ -958,21 +959,25 @@ footer .fixed-container > * {
   .first-section__span__item1 {
     left: 15vw;
     top: 20px;
+    font-size: 40px;
   }
 
   .first-section__span__item3 {
     top: 20px;
     left: 59%;
+    font-size: 36px;
   }
 
   .first-section__span__item4 {
     top: 140px;
     left: 69%;
+    font-size: 32px;
   }
 
   .first-section__span__item5 {
     top: 220px;
     left: 6%;
+    font-size: 32px;
   }
 
   .first-section svg {
@@ -982,10 +987,22 @@ footer .fixed-container > * {
   .first-section__img img {
     height: 420px;
   }
+
+  .third-section h3 {
+    font-size: 18px;
+  }
+
+  .carousel-element img {
+    width: 310px;
+  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 365px) {
   .first-section svg {
     transform: translate(-35rem, -273.6px);
+  }
+
+  .menu__phone-number {
+    font-size: 18px;
   }
 }
