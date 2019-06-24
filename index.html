@@ -19,37 +19,36 @@
   <script src="css/owl-carousel/owl.carousel.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.js" charset="utf-8"></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body>
   <div id="wrapper">
-  <div class="cover"></div>
-  <div class="modal">
-    <div class="content">
-      <p>ЗАКАЗАТЬ ЗВОНОК</p>
-      <form>
-        <input id="content__login" type="text" placeholder="Имя">
-        <input id="content__phone" type="text" placeholder="Телефон">
-        <input id="content__submit" type="submit">
-      </form>
+    <div class="cover"></div>
+    <div class="modal">
+      <div class="content">
+        <p>ЗАКАЗАТЬ ЗВОНОК</p>
+        <form>
+          <input id="content__login" type="text" placeholder="Имя">
+          <input id="content__phone" type="text" placeholder="Телефон">
+          <input id="content__submit" type="submit">
+        </form>
+      </div>
     </div>
   </div>
-</div>
   <div id="information">
-  <div class="info-cover"></div>
-  <div class="info-modal">
-    <div class="info-content">
-      <p>УЗНАТЬ ПОДРОБНОСТИ</p>
-      <form action="mailto:xan50rus@gmail.com" enctype="text/plain">
-        <input id="content__info-login" type="text" placeholder="Имя">
-        <input id="content__info-email" type="email"
-               placeholder="E-mail">
-        <input id="content__info-phone" type="text" placeholder="Телефон">
-        <input id="content__info-submit" type="submit">
-      </form>
+    <div class="info-cover"></div>
+    <div class="info-modal">
+      <div class="info-content">
+        <p>УЗНАТЬ ПОДРОБНОСТИ</p>
+        <form action="mailto:xan50rus@gmail.com" enctype="text/plain">
+          <input id="content__info-login" type="text" placeholder="Имя">
+          <input id="content__info-email" type="email" placeholder="E-mail">
+          <input id="content__info-phone" type="text" placeholder="Телефон">
+          <input id="content__info-submit" type="submit">
+        </form>
+      </div>
     </div>
-  </div>
   </div>
   <header>
     <nav class="menu">
@@ -63,9 +62,9 @@
     </nav>
     <nav id="mobile-menu">
       <p id="menu-design">
-        <a href="#skills" class="menu__button">Услуги</a>
-        <a href="#examples" class="menu__button">Портфолио</a>
-        <a href="#prices" class="menu__button">Стоимость</a>
+        <a href="#skills" class="menu__button mobile-menu__btn">Услуги</a>
+        <a href="#examples" class="menu__button mobile-menu__btn">Портфолио</a>
+        <a href="#prices" class="menu__button mobile-menu__btn">Стоимость</a>
       </p>
     </nav>
   </header>
@@ -86,21 +85,21 @@
           <img src="img/person.png" alt="">
         </div>
       </div>
-        <svg width="1200" height="652">
-          <defs>
-            <linearGradient id="linear-gradient" x1="0" y1="60%" x2="100%" y2="0">
-              <stop offset="0%" stop-color="#ff8f5a" />
-              <stop offset="100%" stop-color="#ff2f96" />
-            </linearGradient>
-            <clipPath id="shape">
-              <ellipse rx="400" ry="250" cx="170" cy="590" transform="rotate(-40 100 80)" />
-              <circle r="400" cx="700" cy="415" />
-            </clipPath>
-          </defs>
-          <g fill="url(#linear-gradient)">
-            <rect width="100%" height="100%" clip-path="url(#shape)" />
-          </g>
-        </svg>
+      <svg width="1200" height="652">
+        <defs>
+          <linearGradient id="linear-gradient" x1="0" y1="60%" x2="100%" y2="0">
+            <stop offset="0%" stop-color="#ff8f5a" />
+            <stop offset="100%" stop-color="#ff2f96" />
+          </linearGradient>
+          <clipPath id="shape">
+            <ellipse rx="400" ry="250" cx="170" cy="590" transform="rotate(-40 100 80)" />
+            <circle r="400" cx="700" cy="415" />
+          </clipPath>
+        </defs>
+        <g fill="url(#linear-gradient)">
+          <rect width="100%" height="100%" clip-path="url(#shape)" />
+        </g>
+      </svg>
     </section>
     <section class="second-section" id="skills">
       <div class="fixed-container">
@@ -180,24 +179,32 @@
   <footer>
     <div class="footer__columns">
       <div class="fixed-container">
-          <div class="footer__column1">
-            <a href="#skills" class="menu__button">Услуги</a>
-            <a href="#examples" class="menu__button">Портфолио</a>
-            <a href="#prices" class="menu__button">Стоимость</a>
+        <div class="footer__column1">
+          <a href="#skills" class="menu__button footer__menu-btn">Услуги</a>
+          <a href="#examples" class="menu__button footer__menu-btn">Портфолио</a>
+          <a href="#prices" class="menu__button footer__menu-btn">Стоимость</a>
+        </div>
+        <div class="footer__column2">
+          <a href="tel:+74999955577" class="footer__column2__contact"><i class="icon-phone"></i> +7 (499) 995-55-77</a>
+          <a href="mailto:xan50rus@gmail.com" class="footer__column2__contact" target="_blank"><i class="icon-mail-alt"></i> xan50rus@gmail.com</a>
+        </div>
+        <div class="footer__column3">
+          <button class="menu__order-call" type="button">Заказать звонок</button>
+          <div class="footer__social-media">
+            <form action="https://vk.com/">
+              <button type="submit" class="footer__btn-social-media vkontakte"></button>
+            </form>
+            <form action="https://facebook.com/">
+              <button type="submit" class="footer__btn-social-media facebook"></button>
+            </form>
+            <form action="https://twitter.com/">
+              <button type="submit" class="footer__btn-social-media twitter"></button>
+            </form>
+            <form action="https://instagram.com/">
+              <button type="submit" class="footer__btn-social-media instagram"></button>
+            </form>
           </div>
-          <div class="footer__column2">
-            <a href="tel:+74999955577" class="footer__column2__contact"><i class="icon-phone"></i> +7 (499) 995-55-77</a>
-            <a href="mailto:xan50rus@gmail.com" class="footer__column2__contact" target="_blank"><i class="icon-mail-alt"></i> xan50rus@gmail.com</a>
-          </div>
-          <div class="footer__column3">
-            <button class="menu__order-call" type="button">Заказать звонок</button>
-            <div class="footer__social-media">
-              <a href="https://vk.com/" target="_blank"><button class="footer__btn-social-media vkontakte" type="button"></button></a>
-              <a href="https://facebook.com/" target="_blank"><button class="footer__btn-social-media facebook" type="button"></button></a>
-              <a href="https://twitter.com/" target="_blank"><button class="footer__btn-social-media twitter" type="button"></button></a>
-              <a href="https://instagram.com/" target="_blank"><button class="footer__btn-social-media instagram" type="button"></button></a>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
     <div class="footer__copyright">

@@ -130,54 +130,32 @@ $('#mobile-menu__button').click(function(){
 	var menu = $('#mobile-menu');
 	$(this).html(menu.is(':visible') ? '<i class="fas fa-bars fa-3x">' : '<i class="fas fa-times fa-3x"></i>');
 	$(menu).is(':visible') ? $('header').css('flex-direction', 'row') : $('header').css('flex-direction', 'column');
-	$(menu).is(':visible') ? $('svg').css({'display': 'block'}) : $('svg').css({ 'display': 'none' });
+	$(menu).is(':visible') ? $('.menu').css({'justify-content': 'space-around'}) : $('.menu').css({'justify-content': 'flex-start'});
+	$(menu).is(':visible') ? $('.menu__phone-number').css({'margin-left': 'auto'}) : $('.menu__phone-number').css({'margin-left': '2000px'});
+	$(menu).is(':visible') ? $('html').css('overflow-y', 'auto') : $('html').css('overflow-y', 'hidden');
+	$(menu).is(':visible') ? $('body').css('overflow-y', 'auto') : $('body').css('overflow-y', 'hidden');
 	menu.toggle('slow');
-	if ($(this).html() == '<i class="fas fa-times fa-3x"></i>'){
-		function disableScroll() {
-			if (window.addEventListener) // older FF
-					window.addEventListener('DOMMouseScroll', preventDefault, false);
-			document.addEventListener('wheel', preventDefault, {passive: false}); // Disable scrolling in Chrome
-			window.onwheel = preventDefault; // modern standard
-			window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-			window.ontouchmove  = preventDefault; // mobile
-			document.onkeydown  = preventDefaultForScrollKeys;
-		}
-	} else {
-		function enableScroll() {
-				if (window.removeEventListener)
-						window.removeEventListener('DOMMouseScroll', preventDefault, false);
-				document.removeEventListener('wheel', preventDefault, {passive: false}); // Enable scrolling in Chrome
-				window.onmousewheel = document.onmousewheel = null;
-				window.onwheel = null;
-				window.ontouchmove = null;
-				document.onkeydown = null;
-				document.addEventListener('wheel', preventDefault, {passive: false});
-		}
-	}
-	var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-function preventDefault(e) {
-e = e || window.event;
-if (e.preventDefault)
-		e.preventDefault();
-e.returnValue = false;
-}
-
-function preventDefaultForScrollKeys(e) {
-	if (keys[e.keyCode]) {
-			preventDefault(e);
-			return false;
-	}
-}
 });
 
-//Ошибка какая-то
-$("a[href^='#']").on("click", function(e){
-			var anchor = $(this);
-			$('html, body').stop().animate({
-					scrollTop: $(anchor.attr('href')).offset().top
-			}, 777);
-			e.preventDefault();
-			return false;
-	});
+$('.mobile-menu__btn').on("click", function() {
+	var menu = $('#mobile-menu');
+	$('#mobile-menu__button').html(menu.is(':visible') ? '<i class="fas fa-bars fa-3x">' : '<i class="fas fa-times fa-3x"></i>');
+	$(menu).is(':visible') ? $('header').css('flex-direction', 'row') : $('header').css('flex-direction', 'column');
+	$(menu).is(':visible') ? $('.menu').css({'justify-content': 'space-around'}) : $('.menu').css({'justify-content': 'flex-start'});
+	$(menu).is(':visible') ? $('.menu__phone-number').css({'margin-left': 'auto'}) : $('.menu__phone-number').css({'margin-left': '2000px'});
+	$(menu).is(':visible') ? $('html').css('overflow-y', 'auto') : $('html').css('overflow-y', 'hidden');
+	$(menu).is(':visible') ? $('body').css('overflow-y', 'auto') : $('body').css('overflow-y', 'hidden');
+	menu.toggle('slow');
+});
+	//
+	// $('.menu__button').on('click', function(e){
+  // 	$('html,body').stop().animate({scrollTop: $(this.hash).offset().top - $('#mobile-menu').height()*1/1.2}, 1000);
+  // 	e.preventDefault();
+	// });
+	//
+	// $('.footer__menu-btn').on('click', function(e){
+  // 	$('html,body').stop().animate({scrollTop: $(this.hash).offset().top + $('#mobile-menu').height()*3.3}, 1000);
+  // 	e.preventDefault();
+	// });
+
 });

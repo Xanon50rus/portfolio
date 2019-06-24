@@ -108,7 +108,7 @@ header {
 }
 
 #mobile-menu__button {
-  background: white;
+  background-color: #fbfbfb;
   outline: none;
   border: 0;
   display: none;
@@ -131,7 +131,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 83vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -667,6 +667,10 @@ footer .fixed-container > * {
   margin: 0 0 31px 0;
 }
 
+.footer__social-media {
+  display: flex;
+}
+
 .footer__btn-social-media {
   width: 39px;
   height: 29px;
@@ -817,7 +821,7 @@ footer .fixed-container > * {
   }
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 820px) {
   .menu .menu__button {
     display: none;
   }
@@ -825,7 +829,9 @@ footer .fixed-container > * {
   #mobile-menu__button {
     display: block;
   }
+}
 
+@media screen and (max-width: 805px) {
   .first-section__content h1, .second-section h1, .third-section h1 {
     font-size: 45px;
   }
@@ -844,7 +850,24 @@ footer .fixed-container > * {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 670px) {
+  footer .fixed-container {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0 40px 15px;
+  }
+
+  footer .fixed-container > * {
+    margin-top: 40px;
+  }
+
+  .footer__column3 .menu__order-call {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 544px) {
   header .menu__order-call {
     display: none;
   }
