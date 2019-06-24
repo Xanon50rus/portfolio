@@ -139,9 +139,9 @@ header {
   margin-top: 40px;
 }
 
-#menu-design>* {
+#menu-design > * {
   margin: 20px;
-  font-size: calc(5vh - 1.6rem);
+  font-size: calc(15vw - 1.6rem);
 }
 
 #mobile-menu__button i {
