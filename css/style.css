@@ -720,7 +720,7 @@ footer .fixed-container > * {
   }
 }
 
-@media screen and (max-width: 1218px) {
+@media screen and (max-width: 1326px) {
   .owl-page {
     display: inline-block;
   }
